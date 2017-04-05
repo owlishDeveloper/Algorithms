@@ -8,7 +8,7 @@ function selectionSort(array) {
   
   // Increasing order
 
-  for (var i = 0; i < array.length; i++) {
+  for (var i = 0; i < array.length - 1; i++) {
     // Loop over the array and swap each element with the smallest
     // from the rest of the array
     swap(array, i, getNextSmallest(array, i));
