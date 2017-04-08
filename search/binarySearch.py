@@ -44,6 +44,3 @@ def biSearch (List, target):
   elif List[guess] > target:
     max = guess - 1;
     return biSearchR(List, target, min, max)
-      
-  
-   
