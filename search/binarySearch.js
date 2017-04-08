@@ -31,3 +31,27 @@ function biSearch(array, target) {
   
   return -1;
 }
+
+
+// Recursive version
+function biSearchR(array, target, min, max) {
+  if (!min && min != 0)
+    min = 0;
+  if (!max && max != 0)
+    max = array.length - 1;
+  
+  if (min > max)
+    return -1;
+  
+  var guess = Math.floor((min + max) / 2);
+  
+  if (array[guess] === target)
+    return guess;
+  else if (array[guess] < target) {
+    min = guess + 1;
+    return biSearchR(array, target, min, max);
+  } else if (array[guess] > target) {
+    max = guess - 1;
+    return biSearchR(array, target, min, max);
+  }
+}
