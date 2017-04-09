@@ -23,7 +23,7 @@ def bisection_search (l, target):
   # Recursive version
   def bisection_search_r (l, target, min = None, max = None):
   '''
-    Searches a given number (target) in a SORTED list of numbers (List)
+    Searches a given number (target) in a SORTED list of numbers (l)
     Returns the index of that number in the list or -1 if not found
   '''
   if min is None:
