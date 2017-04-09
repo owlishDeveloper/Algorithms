@@ -40,7 +40,7 @@ def bisection_search (l, target):
     return guess
   elif l[guess] < target:
     min = guess + 1;
-    return bisection_search_r(List, target, min, max)
+    return bisection_search_r(l, target, min, max)
   elif l[guess] > target:
     max = guess - 1;
     return bisection_search_r(l, target, min, max)
