@@ -14,9 +14,9 @@ def bisection_search (l, target):
     if l[guess] == target:
       return guess
     elif l[guess] < target:
-      min = guess + 1;
+      min = guess + 1
     elif l[guess] > target:
-      max = guess - 1;
+      max = guess - 1
       
   return -1
   
@@ -39,8 +39,8 @@ def bisection_search (l, target):
   if l[guess] == target:
     return guess
   elif l[guess] < target:
-    min = guess + 1;
+    min = guess + 1
     return bisection_search_r(l, target, min, max)
   elif l[guess] > target:
-    max = guess - 1;
+    max = guess - 1
     return bisection_search_r(l, target, min, max)
