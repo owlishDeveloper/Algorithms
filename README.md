@@ -1,2 +1,2 @@
-# Algorithms-CLRS
-Learning from a very heavy book
+# Algorithms
+Assorted collection of my implementations of various algorithms. 
